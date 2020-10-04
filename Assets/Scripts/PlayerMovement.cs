@@ -5,20 +5,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    float playerSpeed = 10;
-    float maxSpeed = 4;
-    float jumpSpeed = 10;
+    public float playerSpeed = 10;
+    public float maxSpeed = 4;
+    public float jumpSpeed = 10;
     public bool onGround;
 
     public Rigidbody2D tankBody;
     
     public GravityChange gc;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void FixedUpdate()

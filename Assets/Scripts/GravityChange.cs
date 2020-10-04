@@ -6,6 +6,7 @@ public class GravityChange : MonoBehaviour
 {
 
     public bool reverseGravity = false;
+    public int gravitySpeed = 7;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +31,11 @@ public class GravityChange : MonoBehaviour
     {
         if (reverseGravity == false)
         {
-            Physics2D.gravity = new Vector2(0, -25);
+            Physics2D.gravity = new Vector2(0, -gravitySpeed);
         }
         else if (reverseGravity == true)
         {
-            Physics2D.gravity = new Vector2(0, 25);
+            Physics2D.gravity = new Vector2(0, gravitySpeed);
         }
     }
 
