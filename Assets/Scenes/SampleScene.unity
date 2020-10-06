@@ -1483,8 +1483,8 @@ MonoBehaviour:
   maxSpeed: 4
   jumpSpeed: 10
   onGround: 0
-  tankBody: {fileID: 0}
-  gc: {fileID: 0}
+  tankBody: {fileID: 1112448478}
+  gc: {fileID: 1523718691}
 --- !u!114 &1523718690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,10 +1497,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89b1d96e83ad7f43ab1cefe3cf33b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedUp: {fileID: 0}
-  speedDown: {fileID: 0}
-  pm: {fileID: 0}
-  gc: {fileID: 0}
+  speedUp: {fileID: 6504900210615886690, guid: e5e491b0bbf73f945a83d6fbac591e2f, type: 3}
+  speedDown: {fileID: 9051277963586818880, guid: 9749faefcb4cee848b405ecb8b08b4a3, type: 3}
+  pm: {fileID: 1523718689}
+  gc: {fileID: 1523718691}
   TakenBoost: 0
   SpeedUpSpeed: 3
   SpeedUpGravitySpeed: 3
@@ -2045,8 +2045,6 @@ GameObject:
   - component: {fileID: 1973164490}
   - component: {fileID: 1973164492}
   - component: {fileID: 1973164493}
-  - component: {fileID: 1973164494}
-  - component: {fileID: 1973164495}
   m_Layer: 0
   m_Name: Rotator
   m_TagString: Untagged
@@ -2156,37 +2154,6 @@ FixedJoint2D:
   m_ConnectedAnchor: {x: 0, y: -0.5}
   m_DampingRatio: 0
   m_Frequency: 0
---- !u!114 &1973164494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973164488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca0f7c9161c792b42a1c1c07b563f0ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotator: {fileID: 1973164492}
---- !u!114 &1973164495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973164488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41539d8b05f72214386fe71c7325b069, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: 10
-  maxSpeed: 4
-  jumpSpeed: 10
-  onGround: 0
-  tankBody: {fileID: 0}
-  gc: {fileID: 0}
 --- !u!1 &2023276951
 GameObject:
   m_ObjectHideFlags: 0
