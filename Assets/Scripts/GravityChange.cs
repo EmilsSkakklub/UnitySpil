@@ -6,7 +6,7 @@ public class GravityChange : MonoBehaviour
 {
 
     public bool reverseGravity = false;
-    public float gravitySpeed = 7;
+    public float gravitySpeed = 25;
 
     // Start is called before the first frame update
     void Start()
