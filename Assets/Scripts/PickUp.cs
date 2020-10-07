@@ -39,7 +39,7 @@ public class PickUp : MonoBehaviour
     }
     private void IsSpeededUp()
     {
-        pm.maxSpeed = pm.maxSpeed * SpeedUpSpeed;
+        //pm.maxSpeed = pm.maxSpeed * SpeedUpSpeed;
         gc.gravitySpeed = gc.gravitySpeed * SpeedUpGravitySpeed;
         Invoke("IsNormal", 10);
         TakenBoost = true;
@@ -47,14 +47,14 @@ public class PickUp : MonoBehaviour
     }
     private void IsSlowedDown()
     {
-        pm.maxSpeed = pm.maxSpeed * SpeedDownSpeed;
+        //pm.maxSpeed = pm.maxSpeed * SpeedDownSpeed;
         gc.gravitySpeed = gc.gravitySpeed * SpeedDownGravitySpeed;
         Invoke("IsNormal", 10);
         TakenBoost = true;
     }
     private void IsNormal()
     {
-        pm.maxSpeed = 4f;
+        //pm.maxSpeed = 4f;
         gc.gravitySpeed = 7f;
         TakenBoost = false;
     }

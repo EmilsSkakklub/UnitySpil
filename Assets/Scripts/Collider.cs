@@ -20,20 +20,20 @@ public class Collider : MonoBehaviour
     }
 
     //Collision detection on ground
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Wall"))
         {
-            pm.onGround = true;
+            pm.hitWall = true;
         }
     }
 
     //Check if player no longer has collision with ground
-    private void OnCollisionExit2D(Collision2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Wall"))
         {
-            pm.onGround = false;
+            pm.hitWall= false;
         }
     }
 }
